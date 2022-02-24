@@ -6,6 +6,9 @@
     <title>Satan Temple</title>
     <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon.png">
 <!-- IONIC-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel=manifest href="https://ionic.io/ionicons/manifest.json">
 <meta property=og:title content="Satan Temple">
 <meta property=og:description content="Welcome to the Satan temple">
@@ -55,7 +58,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   -webkit-transition: All 0.2s ease;
 -moz-transition: All 0.2s ease;
 -o-transition: All 0.2s ease;
@@ -66,17 +69,6 @@ box-sizing:border-box;
   -ms-box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
-}
-
-@font-face {
-    font-family: 'oswald';
-    src: url('static/fonts/oswald-regular/oswald-regular-webfont.eot');
-    src: url('static/fonts/oswald-regular/oswald-regular-webfont.eot#iefix') format('embedded-opentype'),
-         url('static/fonts/oswald-regular/oswald-regular-webfont.woff') format('woff'),
-         url('static/fonts/oswald-regular/oswald-regular-webfont.ttf') format('truetype'),
-         url('static/fonts/oswald-regular/oswald-regular-webfont.svg#paktregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 a:hover{cursor: default;}
 
@@ -111,23 +103,30 @@ function right01()
 <section id="loader" class="loader">
 </section>
  <section id="temple">
-   <nav id="moon"></nav>
+   <nav id="moon">
+     <a href="mailto:satantemplecom@gmail.com"> <ion-icon name="mail-unread-outline"></ion-icon> Contact us</a>
+   </nav>
    <article class="love">
      <div id="sigil"></div>
      <h1>Welcome to temple of true</h1>
-     <h2>On this site users around the world can share your own experiences about the true and love of master.</h2>
-     <a class="send" href="#">Enjoy</a>
+     <h2>On this site users around the world can share your own experiences about the true and love of our master.</h2>
+     <a class="send" href="https://github.com/satantemple/satantemple.github.io/raw/main/satantemple.pdf">Download book</a>
    </article>
-   <nav id="sun"></nav>
+   <nav id="sun">
+     <a href="https://www.facebook.com/satantemple"><ion-icon name="logo-facebook"></ion-icon> Members</a>
+     <a href="https://www.paypal.com/paypalme/almaginet"><ion-icon name="logo-paypal"></ion-icon> Payments</a>
+   </nav>
  </section>
 
 <style type="text/css">
   html{width:100%;height:100%;}
   body{width:100%;height:100%;} 
-  #sigil{width:70px;height:70px;background:red;margin:0 auto;border-radius:50%;margin-bottom:30px;}
-  .send{padding:10px 50px;background:red;color:black;border-radius:30px;font-size:20px;font-weight:bold;margin:5px 0px;display:inline-block;} #moon{position:fixed;top:0;left:0;width:100%;height:60px;background:rgba(0,0,0,0.8);} 
-#sun{position:fixed;bottom:0;left:0;width:100%;height:60px;background:black;}
-  #temple{width:100%;height:100%;background:red url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/01.jpg);no-repeat center center;background-size:100%;} .love{background:rgba(0,0,0,0.7);width:100%;height:100%;padding:100px;text-align:center;}
+  #sigil{width:70px;height:70px;background:red url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/sigil.png)no-repeat center center;background-size:110%;;margin:0 auto;border-radius:50%;margin-bottom:30px;}
+  .send{padding:10px 50px;background:red;color:black;border-radius:30px;font-size:20px;font-weight:bold;margin:5px 0px;display:inline-block;} #moon{position:fixed;top:0;left:0;width:100%;height:60px;background:rgba(0,0,0,0.8);text-align:center;} 
+#sun{position:fixed;bottom:0;left:0;width:100%;height:60px;background:black;text-align:center;}
+  #sun a{color:white;background:black;height:100%;display:inline-block;line-height:4;padding:0 20px;}
+  #moon a{color:red;background:rgba(255,255,255,0.1);height:100%;display:inline-block;line-height:4;padding:0 20px;}
+  #temple{width:100%;height:100%;background:red url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/02.jpg);no-repeat center center;background-size:100%;} .love{background:rgba(0,0,0,0.7);width:100%;height:100%;padding:100px;text-align:center;}
   .love h1{color:white;font-size:44px;}
   .love h2{color:white;font-size:22px;padding:20px;}
     #loader{text-align:center;z-index: 20;position: fixed;overflow: hidden;width: 100%;height: 100%;padding-top:15%;top:0;left: 0;}
