@@ -204,24 +204,25 @@ function right01()
   </div>
 </div>
 </section>
-   <footer>© Copyright SatanTemple</footer>
 </section>
+  <footer>© Copyright SatanTemple</footer>
 <style type="text/css">
   .videos{padding:20px;background:red;text-align:center;}
   .splide{height:100%;}
+  #splide02{height:auto;}
   .splide__track{height:100%;}
   .splide__list{height:100%;}
   .splide__slide{height:100%;}
-  footer{background:black;color:white;text-align:center;padding:30px;}
+  footer{background:black;color:white;text-align:center;padding:30px;padding-bottom:90px;}
   html{width:100%;height:100%;}
   body{width:100%;height:100%;} 
   #sigil{width:70px;height:70px;background:red url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/sigil.png)no-repeat center center;background-size:110%;;margin:0 auto;border-radius:50%;margin-bottom:10px;}
   .send{padding:10px 50px;background:red;color:black;border-radius:30px;font-size:20px;font-weight:bold;margin:5px 0px;display:inline-block;} 
-  .video{padding:10px;background:black;margin:5px;border-radius:5px;} #moon{position:fixed;top:0;left:0;width:100%;height:60px;background:rgba(0,0,0,0.8);text-align:center;z-index:101;} 
+  .video{padding:10px;background:black;margin:5px;border-radius:5px;height:325px;} #moon{position:fixed;top:0;left:0;width:100%;height:60px;background:rgba(0,0,0,0.8);text-align:center;z-index:101;} 
 #sun{position:fixed;bottom:0;left:0;width:100%;height:60px;background:black;text-align:center;z-index:100;}
   #sun a{color:white;background:black;height:100%;display:inline-block;line-height:4;padding:0 20px;}
   #moon a{color:red;background:rgba(255,255,255,0.1);height:100%;display:inline-block;line-height:4;padding:0 20px;}
-  #temple{width:100%;height:100%;background:black;padding:60px 0;} 
+  #temple{width:100%;height:100%;background:black;padding-top:60px;} 
   .love{border-radius:3px;background:rgba(0,0,0,0.7);width:100%;height:100%;text-align:center;padding:10px 30px;}
   .love1{background:url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/02.jpg);no-repeat center center;background-size:cover;width:100%;height:100%;padding:10px;text-align:center;}
   .love2{background:url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/04.jpg);no-repeat center center;background-size:cover;width:100%;height:100%;padding:10px;text-align:center;}
@@ -238,6 +239,7 @@ function right01()
   
   @media screen and (max-width:833px){
 .splide{height:auto;}
+    #splide02{height:auto;}
   .splide__track{height:auto;}
   .splide__list{height:auto;}
   .splide__slide{height:auto;}
@@ -294,6 +296,16 @@ var splide02 = new Splide( '#splide02', {
   pauseOnHover : false,
   resetProgress: false,
   perPage: 4,
+  breakpoints: {
+		833: {
+			perPage: 2,
+		},
+  },
+  breakpoints: {
+		633: {
+			perPage: 1,
+		},
+  },
   rewind : true,
   pagination: false,
 } );
