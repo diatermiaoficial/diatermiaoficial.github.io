@@ -112,32 +112,36 @@ function right01()
         <div class="splide">
           <div class="splide__track">
                 <ul class="splide__list">
-                  <article class="love">
                     <li class="splide__slide">
                       <article class="love1">
+                        <article class="love">
                          <div id="sigil"></div>
                          <h1>Welcome to temple of true</h1>
                          <h3>On this site users around the world can share your own experiences about the true and love of our master.</h3>
                          <a class="send" href="https://github.com/satantemple/satantemple.github.io/raw/main/satantemple.pdf">Download book</a>
                     </article>
+                    </article>
                     </li>
                     <li class="splide__slide">
                       <article class="love2">
+                        <article class="love">
                         <div id="sigil"></div>
                          <h2>Welcome to temple of knoledge</h2>
                          <h3>Making regular payments you can acces to special content.</h3>
                          <a class="send" href="https://github.com/satantemple/satantemple.github.io/raw/main/satantemple.pdf">Download book</a>
                     </article>
+                        </article>
                     </li>
                     <li class="splide__slide">
                     <article class="love3">
+                      <article class="love">
                         <div id="sigil"></div>
                          <h2>Welcome to temple of Satan</h2>
                          <h3>Making regular payments you can acces to special content.</h3>
                          <a class="send" href="https://github.com/satantemple/satantemple.github.io/raw/main/satantemple.pdf">Download book</a>
                     </article>
+                      </article>
                     </li>
-                </article>
                 </ul>
           </div>
         </div>
@@ -148,27 +152,46 @@ function right01()
  </section>
 
 <style type="text/css">
+  .splide{height:100%;}
+  .splide__track{height:100%;}
+  .splide__list{height:100%;}
+  .splide__slide{height:100%;}
+  
   html{width:100%;height:100%;}
   body{width:100%;height:100%;} 
-  #sigil{width:70px;height:70px;background:red url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/sigil.png)no-repeat center center;background-size:110%;;margin:0 auto;border-radius:50%;margin-bottom:30px;}
+  #sigil{width:70px;height:70px;background:red url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/sigil.png)no-repeat center center;background-size:110%;;margin:0 auto;border-radius:50%;margin-bottom:10px;}
   .send{padding:10px 50px;background:red;color:black;border-radius:30px;font-size:20px;font-weight:bold;margin:5px 0px;display:inline-block;} 
   #moon{position:fixed;top:0;left:0;width:100%;height:60px;background:rgba(0,0,0,0.8);text-align:center;z-index:101;} 
 #sun{position:fixed;bottom:0;left:0;width:100%;height:60px;background:black;text-align:center;z-index:100;}
   #sun a{color:white;background:black;height:100%;display:inline-block;line-height:4;padding:0 20px;}
   #moon a{color:red;background:rgba(255,255,255,0.1);height:100%;display:inline-block;line-height:4;padding:0 20px;}
-  #temple{width:100%;height:100%;background:red url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/02.jpg);no-repeat center center;background-size:100%;} 
-  .love{background:rgba(0,0,0,0.7);width:100%;height:100%;text-align:center;}
-  .love1{background:url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/02.jpg);no-repeat center center;background-size:100%;width:100%;height:100%;padding:100px;text-align:center;}
-  .love2{background:url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/04.jpg);no-repeat center center;background-size:100%;width:100%;height:100%;padding:100px;text-align:center;}
-  .love3{background:url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/05.jpg);no-repeat center center;background-size:100%;width:100%;height:100%;padding:100px;text-align:center;}
+  #temple{width:100%;height:100%;background:black;padding:60px 0;} 
+  .love{border-radius:3px;background:rgba(0,0,0,0.7);width:100%;height:100%;text-align:center;padding:10px 30px;}
+  .love1{background:url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/02.jpg);no-repeat center center;background-size:cover;width:100%;height:100%;padding:10px;text-align:center;}
+  .love2{background:url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/04.jpg);no-repeat center center;background-size:cover;width:100%;height:100%;padding:10px;text-align:center;}
+  .love3{background:url(https://raw.githubusercontent.com/satantemple/satantemple.github.io/main/05.jpg);no-repeat center center;background-size:cover;width:100%;height:100%;padding:10px;text-align:center;}
   h1{color:white;font-size:44px;}
   h2{color:white;font-size:44px;}
-  h3{color:white;font-size:22px;padding:20px;}
+  h3{color:white;font-size:22px;padding:q0px;}
     #loader{text-align:center;z-index: 20;position: fixed;overflow: hidden;width: 100%;height: 100%;padding-top:15%;top:0;left: 0;}
     .loader{display: none;background: black url(static/img/logo.png)no-repeat center center;background-size:60px;}
     .loadersm{display: block;background: black url(static/img/logo.png)no-repeat center center;background-size:60px;}
     .loadersml{display: block;background: black url(static/img/logo.png)no-repeat center center;background-size:80px;opacity: 0.8}
     .loaders{display: none;}
+  
+  @media screen and (max-width:833px){
+.splide{height:auto;}
+  .splide__track{height:auto;}
+  .splide__list{height:auto;}
+  .splide__slide{height:auto;}
+  #temple{height:auto;}
+    .love{height:auto;}
+    .love1{height:auto;}
+    .love2{height:auto;}
+    .love3{height:auto;}
+    body{height:auto;}
+    html{height:auto;}
+}
 </style>
 
 <script type="text/javascript">
